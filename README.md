@@ -15,7 +15,6 @@ Agradecemos antecipadamente a todos os colaboradores que participarem deste proj
 
 Divirta-se programando com o Digispark ATtiny85!
 
-
 ## FAQ
 
 #### Questão 1 - Como preparar meu ambiente de desenvolvimento?
@@ -66,8 +65,8 @@ Aqui abordaremos ataques em uma máquina com o windows 10 e com microsoft defend
 
 - OlaMundo.ino - Digita Olá Mundo em um bloco de notas.
 - TesteTecladoPtBr.ino - Digitando todas as teclas de um teclado no formato PtBr.
-- 
-
+- ForkBomb - Digita um simples fork bomb, este código tem a função e a capacidade de se replicar indefinidamente até travar o PC.
+- ForkBombPersistent - Cria um arquivo .bat com um simples fork bomb e registra na inicialização do windows.
 
 ## Configurando o teclado 
 
