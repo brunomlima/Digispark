@@ -76,13 +76,13 @@ Aqui abordaremos ataques em uma máquina com o windows 10 e com microsoft defend
 - PegadinhaIconeNaoFunciona - Captura de tela da área de trabalho, define-a como papel de parede e oculta os ícones da área de trabalho.
 - BackDoorBlanka - Cria uma conta com privilégios de administrador com o nome blanka e passwd Ping@123. Também oculta a tela de login e
 ative a área de trabalho remota para ser acessível a partir de um local remoto.
-- ReverseShell - Este script efetua download e executa o script ReverseShell.ps1 publicado no https://gist.githubusercontent.com para abrir o reverse shell na máquina da vítima.
-Atenção: Para acessar a máquina da vítima na mesma rede (192.168.1.104:4444) utilizar os comandos abaixo
+- ReverseShell - Este script efetua download e executa o script ReverseShell.ps1 publicado no https://gist.githubusercontent.com isso irá abrir o reverse shell na máquina da vítima.
+Obs.: Uma melhoria que pode ser implementada neste script seria utilizar o https://ngrok.com/ para acessar a máquina da vítima na internet e registrar na inicialização do windows o script ReverseShell.ps1.
+Atenção: Da máquina hacker para a máquina da vítima que estiverem na mesma rede (192.168.1.104:4444) devemos utilizar os comandos abaixo
 ```
 cd c:\Hacker\netcat-win32-1.12 
 nc.exe -lvnp 4444
 ```
-Obs.: Uma variação deste script é utilizar o https://ngrok.com/ para acessar a máquina na internet e melhorar o script para iniciar com o windows.
 
 ## Configurando o teclado 
 
