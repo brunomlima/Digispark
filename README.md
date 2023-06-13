@@ -101,9 +101,7 @@ Recomenda-se sempre obter as autorizações necessárias e agir de acordo com as
 
 Se tiver dúvidas sobre a legalidade do uso de qualquer script ou se precisar de orientações adicionais, é altamente recomendável consultar um profissional qualificado ou especialista no assunto.
 
-Ao utilizar este repositório, você concorda com os termos deste disclaimer e assume total responsabilidade por suas ações."
-
-Certifique-se de adaptar o disclaimer de acordo com as suas necessidades e com as leis e regulamentos locais aplicáveis. É importante enfatizar a importância do uso ético e legal dos scripts disponíveis no repositório.
+Ao utilizar este repositório, você concorda com os termos deste disclaimer e assume total responsabilidade por suas ações.
 
 
 
