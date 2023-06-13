@@ -73,7 +73,7 @@ Aqui abordaremos ataques em uma máquina com o windows 10 e com microsoft defend
                       Exibe trilhas de ponteiro,
                       Diminui a velocidade do ponteiro para a configuração mais baixa possível,
                       Aumenta o incremento de rolagem vertical para 100 linhas.
-
+- PegadinhaIconeNaoFunciona - Captura de tela da área de trabalho, define-a como papel de parede e oculta os ícones da área de trabalho.
 ## Configurando o teclado 
 
 Utilizamos um include do script DigiKeyboardPtBr.h em todos scripts para configuração do teclado PtBr.
