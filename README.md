@@ -74,6 +74,8 @@ Aqui abordaremos ataques em uma máquina com o windows 10 e com microsoft defend
                       Diminui a velocidade do ponteiro para a configuração mais baixa possível,
                       Aumenta o incremento de rolagem vertical para 100 linhas.
 - PegadinhaIconeNaoFunciona - Captura de tela da área de trabalho, define-a como papel de parede e oculta os ícones da área de trabalho.
+- BackDoorBlanka - Cria uma conta com privilégios de administrador com o nome blanka e passwd Ping@123. Também oculta a tela de login e
+ative a área de trabalho remota para ser acessível a partir de um local remoto.
 ## Configurando o teclado 
 
 Utilizamos um include do script DigiKeyboardPtBr.h em todos scripts para configuração do teclado PtBr.
