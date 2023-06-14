@@ -57,7 +57,7 @@ https://www.pontodaeletronica.com.br/
 
 #### Questão 3 - Qual será o ambiente atacado e sua configuração básica de defesa?
 
-Aqui abordaremos ataques em uma máquina com o windows 10 e com microsoft defender ativo e atualizado.
+Aqui abordaremos ataques em uma máquina com o windows 10 pro com 64bit e com microsoft defender ativo e atualizado.
 
 
 
@@ -80,6 +80,10 @@ nc.exe -lvnp 4444
 ```
 NÃO TEM O NETCAT? BAIXE AQUI! 
 - [eternallybored](https://eternallybored.org/misc/netcat/)
+- BackDoorSSHWin10.ino - Este script efetua download e executa o script Install-OpenSSH.ps1 publicado no https://gist.githubusercontent.com isso irá instalar e configurar o Open SSH na máquina da vítima e será possível acessar remotamente na mesma rede via programa putty.
+Obs.: Uma melhoria que pode ser implementada nos script Install-OpenSSH.ps1 é a alteração da porta padrão 22 para ex: 2222 e configurar usuario e chave publica enviando essas informações por e-mail.
+NÃO TEM O PUTTY? BAIXE AQUI! 
+- [putty](https://www.putty.org/)
 
 ## Configurando o teclado 
 
@@ -96,6 +100,8 @@ Links de autores e conteúdos utilizados como base para o desenvolvimento e estu
  - [digistump](https://github.com/digistump/DigisparkArduinoIntegration)
  - [S1700](https://github.com/S1700/Digispark_scripts)
  - [elementalsouls](https://github.com/elementalsouls/DIGISPARK)
+ - [extide](https://github.com/extide/Install-OpenSSH/blob/main/Install-OpenSSH.ps1#L129)
+ 
 ## Autor
 
 - [@brunomlima](https://github.com/brunomlima)
