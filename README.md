@@ -81,7 +81,7 @@ Atenção: Da máquina hacker para a máquina da vítima que estiverem na mesma 
     Não tem o NETCAT? [eternallybored](https://eternallybored.org/misc/netcat/)
 
 - BackDoorSSHWin10.ino - Este script efetua download e executa o script Install-OpenSSH.ps1 publicado no https://gist.githubusercontent.com isso irá instalar e configurar o Open SSH na máquina da vítima e será possível acessar remotamente na mesma rede via programa putty.
-Obs.: Uma melhoria que pode ser implementada nos script Install-OpenSSH.ps1 é a alteração da porta padrão 22 para ex: 2222 e configurar usuario e chave publica enviando essas informações por e-mail.
+Obs.: Uma melhoria que pode ser implementada nos script Install-OpenSSH.ps1 é a alteração da porta padrão 21 para ex: 2121 e configurar usuario e chave publica enviando essas informações por e-mail.
 
     Não tem o PUTTY? [putty](https://www.putty.org/)
 
