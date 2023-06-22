@@ -57,7 +57,7 @@ https://www.pontodaeletronica.com.br/
 
 #### Questão 3 - Qual será o ambiente atacado e sua configuração básica de defesa?
 
-Aqui abordaremos ataques em uma máquina com o windows 10 pro com 64bit e com microsoft defender ativo e atualizado.
+Aqui abordaremos ataques em uma máquina com o Sistema Operacional Windows 10 Pro 64bit e com Microsoft Defender ativo e atualizado.
 
 
 
@@ -73,19 +73,21 @@ Aqui abordaremos ataques em uma máquina com o windows 10 pro com 64bit e com mi
 ative a área de trabalho remota para ser acessível a partir de um local remoto.
 - ReverseShell.ino - Este script efetua download e executa o script ReverseShell.ps1 publicado no https://gist.githubusercontent.com isso irá abrir o reverse shell na máquina da vítima.
 Obs.: Uma melhoria que pode ser implementada neste script seria utilizar o https://ngrok.com/ para acessar a máquina da vítima na internet e registrar na inicialização do windows o script ReverseShell.ps1.
-Atenção: Da máquina hacker para a máquina da vítima que estiverem na mesma rede (192.168.1.104:4444) devemos utilizar os comandos abaixo
+Atenção: Da máquina hacker para a máquina da vítima que estiverem na mesma rede (Exemplo: 192.168.1.104:4444) devemos utilizar os comandos abaixo
     ```
     cd c:\Hacker\netcat-win32-1.12 
     nc.exe -lvnp 4444
     ```
-    Não tem o NETCAT? [eternallybored](https://eternallybored.org/misc/netcat/)
+    Não tem o NETCAT? Baixe aqui [eternallybored](https://eternallybored.org/misc/netcat/)
 
 - BackDoorSSHWin10.ino - Este script efetua download e executa o script Install-OpenSSH.ps1 publicado no https://gist.githubusercontent.com isso irá instalar e configurar o Open SSH na máquina da vítima e será possível acessar remotamente na mesma rede via programa putty.
 Obs.: Uma melhoria que pode ser implementada nos script Install-OpenSSH.ps1 é a alteração da porta padrão 21 para ex: 2121 e configurar usuario e chave publica enviando essas informações por e-mail.
 
-    Não tem o PUTTY? [putty](https://www.putty.org/)
+    Não tem o PUTTY? Baixe aqui [putty](https://www.putty.org/)
 
-## Configurando o teclado 
+- InstallSKGBr.ino - Este script efetua o download e a instalação do software SKGBr, para saber mais acesse [SKGBr](https://github.com/brunomlima/SKGBr)
+
+## Configurando o teclado brasileiro
 
 Utilizamos um include do script DigiKeyboardPtBr.h em todos scripts para configuração do teclado PtBr.
 
