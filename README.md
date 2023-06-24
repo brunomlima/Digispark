@@ -22,17 +22,18 @@ Divirta-se programando com o Digispark ATtiny85!
 Instalar os drivers do arduino
 https://github.com/digistump/DigistumpArduino/releases
 
-Instalar a IDE do arduino
+Instalar a IDE do arduino em português do Brasil (Versão 2.1.0)
 https://www.arduino.cc/en/main/software
 
-Abra a IDE e vá para o menu File -> Preferences. Insira a URL abaixo no campo Additional Boards Manager URLs
-http://digistump.com/package_digistump_index.json
+Abra a IDE e vá para o menu Arquivo -> Prefererências. 
+Insira a URL abaixo no campo URLs do Gerenciador de Placas Adicionais
+https://raw.githubusercontent.com/digistump/arduino-boards-index/master/package_digistump_index.json
 
-Assim que concluído, vá para o menu Board -> Boards Manager. Clique no campo de pesquisa e digite Digistump AVR Boards. O pacote irá aparece abaixo e então clique no botão para instalar.
+Assim que concluído, vá para o menu Ferramentas -> Placa -> Gerenciador de placas.. ou (Ctrl + Shift + B). 
+Clique no campo de pesquisa e digite Digistump AVR Boards. O pacote irá aparece abaixo e então clique no botão para instalar.
 
-Antes de você iniciar qualquer programa é importante ir até o menu Tools -> Board. Navegue para baixo até que ver a opção Digispark (Default — 16.5mhz) e então a selecione.
-
-Para precaução, vá até o menu Tools > Programmer e altere para a opação USBtinyISP
+Antes de você iniciar qualquer programa é importante ir até o menu Ferramentas -> Placa -> Digistump AVR Board 
+Selecione a opção Digispark (Default — 16.5mhz).
 
 Passo-a-passo, originalmente em inglês, disponível no link abaixo:
 
