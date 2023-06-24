@@ -1,10 +1,12 @@
 #include "DigiKeyboardPtBr.h"
 #define KEY_TAB 0x2b
 void setup() {
+  pinMode(0,OUTPUT); //LED on model B
+  pinMode(1,OUTPUT); //LED on model A    
 }
 
 void loop() {
-  digitalWrite(1, HIGH); // LED on <--> Action start
+  pisca_led(100);
   DigiKeyboardPtBr.update();
   DigiKeyboardPtBr.sendKeyStroke(0);
   DigiKeyboardPtBr.delay(3000);
@@ -36,6 +38,17 @@ void loop() {
   DigiKeyboardPtBr.delay(500);  
   DigiKeyboardPtBr.println("exit");//adding created user to remote desktop group
   DigiKeyboardPtBr.delay(500);
-  digitalWrite(1, LOW); // LED off <--> Action end
+  pisca_led(1000); 
   for(;;){ /*empty*/ }
+}
+
+void pisca_led(int velocidade){  
+  for (int inicio =1; inicio <= 10; inicio ++) {
+    digitalWrite(0, HIGH); // LED on <--> Action start
+    digitalWrite(1, HIGH); // LED on <--> Action start
+    DigiKeyboardPtBr.delay(velocidade);  
+    digitalWrite(0, LOW); // LED off <--> Action end
+    digitalWrite(1, LOW); // LED off <--> Action end
+    DigiKeyboardPtBr.delay(velocidade);  
+  } 
 }
