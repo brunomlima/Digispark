@@ -67,8 +67,8 @@ Aqui abordaremos ataques em uma máquina com o Sistema Operacional Windows 10 Pr
 - OlaMundo.ino - Digita Olá Mundo em um bloco de notas.
 - TesteTecladoPtBr.ino - Digitando todas as teclas de um teclado no formato PtBr.
 - ForkBomb.ino - Digita um simples fork bomb, este código tem a função e a capacidade de se replicar indefinidamente até travar o PC.
-- ForkBombPersistent.ino - Cria um arquivo .bat com um simples fork bomb e registra na inicialização do windows.
-- RemoveForkBombPersistent.ino - (Entrar no windows em modo de segurança) Remove da inicialização o arquivo .bat do fork bomb, ou ao iniciar em modo normal, teclar ctrl + shift + esc, clique na aba inicializar, botão direito no fork e desabilitar.
+- RemoveForkBombPersistent.ino - Remover da inicialização o arquivo .bat do fork bomb. Atenção :  Para que você consiga executar o script, primeiro desabilite o fork da inicialização do Windows, seguindo esse passo a passo - digite: ctrl + shift + esc, clique na aba inicializar, botão direito no fork e escolha a opção desabilitar, tudo pronto para executar o script.
+- ForkBombPersistent.ino - Cria um arquivo .bat com um simples fork bomb e registra na inicialização do windows, na sequência executa um fork bomb. Atenção: caso você tenha executado este script sem querer na sua máquina, siga o passo a passo descrito no script RemoveForkBomPersistent.
 - DesconfiguraMouse.ino - Abre as Propriedades do Mouse, alterna botões primários e secundários, altera a velocidade do clique duplo para lenta, exibe trilhas de ponteiro,a velocidade do ponteiro para a configuração mais baixa possível, aumenta o incremento de rolagem vertical para 100 linhas.
 - PegadinhaIconeNaoFunciona.ino - Captura de tela da área de trabalho, define-a como papel de parede e oculta os ícones da área de trabalho.
 - BackDoorBlanka.ino - Cria uma conta com privilégios de administrador com o nome blanka e passwd Ping@123. Também oculta a tela de login e
