@@ -68,6 +68,7 @@ Aqui abordaremos ataques em uma máquina com o Sistema Operacional Windows 10 Pr
 - TesteTecladoPtBr.ino - Digitando todas as teclas de um teclado no formato PtBr.
 - ForkBomb.ino - Digita um simples fork bomb, este código tem a função e a capacidade de se replicar indefinidamente até travar o PC.
 - ForkBombPersistent.ino - Cria um arquivo .bat com um simples fork bomb e registra na inicialização do windows.
+- RemoveForkBombPersistent.ino - (Entrar no windows em modo de segurança) Remove da inicialização o arquivo .bat do fork bomb, ou ao iniciar em modo normal, teclar ctrl + shift + esc, clique na aba inicializar, botão direito no fork e desabilitar.
 - DesconfiguraMouse.ino - Abre as Propriedades do Mouse, alterna botões primários e secundários, altera a velocidade do clique duplo para lenta, exibe trilhas de ponteiro,a velocidade do ponteiro para a configuração mais baixa possível, aumenta o incremento de rolagem vertical para 100 linhas.
 - PegadinhaIconeNaoFunciona.ino - Captura de tela da área de trabalho, define-a como papel de parede e oculta os ícones da área de trabalho.
 - BackDoorBlanka.ino - Cria uma conta com privilégios de administrador com o nome blanka e passwd Ping@123. Também oculta a tela de login e

