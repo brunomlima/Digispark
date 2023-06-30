@@ -89,7 +89,7 @@ Obs.: Uma melhoria que pode ser implementada nos script Install-OpenSSH.ps1 é a
 
     Não tem o PUTTY? Baixe aqui [putty](https://www.putty.org/)
 
-- InstallSKGBr.ino - Este script efetua o download e a instalação do software SKGBr, para saber mais acesse [SKGBr](https://github.com/brunomlima/SKGBr)
+- [InstallSKGBr.ino](https://github.com/brunomlima/Digispark/tree/main/InstallSKGBr) - Este script efetua o download e a instalação do software SKGBr, para saber mais acesse [SKGBr](https://github.com/brunomlima/SKGBr)
 
 ## Configurando o teclado brasileiro
 
@@ -100,12 +100,14 @@ Utilizamos um include do script DigiKeyboardPtBr.h em todos scripts para configu
 
 Links de autores e conteúdos utilizados como base para o desenvolvimento e estudos
 
+ - [duckify](https://duckify.huhn.me/)
  - [Gadotti](https://github.com/Gadotti/DigisparkScripts)
  - [CedArctic](https://github.com/CedArctic/DigiSpark-Scripts)
  - [m6sser](https://github.com/m6sser/Digispark_scripts)
  - [digistump](https://github.com/digistump/DigisparkArduinoIntegration)
  - [S1700](https://github.com/S1700/Digispark_scripts)
  - [elementalsouls](https://github.com/elementalsouls/DIGISPARK)
+ - [joelsernamoreno](https://github.com/joelsernamoreno/badusb_examples/tree/master/attiny85_digispark)
  - [extide](https://github.com/extide/Install-OpenSSH/blob/main/Install-OpenSSH.ps1#L129)
  
 ## Autor
