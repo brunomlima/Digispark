@@ -3,8 +3,8 @@
 #define KEY_ARROW_RIGHT 0x4F
 
 void setup() {
-    pinMode(0,OUTPUT); //LED on model B
-    pinMode(1,OUTPUT); //LED on model A      
+    pinMode(0,OUTPUT); 
+    pinMode(1,OUTPUT);       
 }
 
 void loop() {
@@ -92,11 +92,11 @@ void loop() {
 
 void pisca_led(int velocidade){  
   for (int inicio =1; inicio <= 10; inicio ++) {
-    digitalWrite(0, HIGH); // LED on <--> Action start
-    digitalWrite(1, HIGH); // LED on <--> Action start
+    digitalWrite(0, HIGH); 
+    digitalWrite(1, HIGH); 
     DigiKeyboardPtBr.delay(velocidade);  
-    digitalWrite(0, LOW); // LED off <--> Action end
-    digitalWrite(1, LOW); // LED off <--> Action end
+    digitalWrite(0, LOW); 
+    digitalWrite(1, LOW); 
     DigiKeyboardPtBr.delay(velocidade);  
   } 
 }
