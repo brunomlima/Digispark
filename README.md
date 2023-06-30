@@ -73,8 +73,10 @@ Aqui abordaremos ataques em uma máquina com o Sistema Operacional Windows 10 Pr
 - [PegadinhaIconeNaoFunciona.ino](https://github.com/brunomlima/Digispark/tree/main/PegadinhaIconeNaoFunciona) - Captura de tela da área de trabalho, define-a como papel de parede e oculta os ícones da área de trabalho.
 - [BackDoorBlanka.ino](https://github.com/brunomlima/Digispark/tree/main/BackDoorBlanka) - Cria uma conta com privilégios de administrador com o nome blanka e passwd Ping@123. Também oculta a tela de login e
 ativa a área de trabalho remota para ser acessível a partir de um local remoto.
-- [DownloadScriptOlaMundo.ino](https://github.com/brunomlima/tree/main/DownloadScriptOlaMundo) - Este script efetua download e executa o script ScriptOlaMundo.ps1 publicado no https://gist.githubusercontent.com isso irá apresentar na tela do powershell uma mensagem  "Hello, World!".
-- [DesabilitaWindowsDefender.ino](https://github.com/brunomlima/tree/main/DesabilitaWindowsDefender) - Este script abre o powersheel como administrador, desabilita o windows defender e o firewall.
+- [DownloadScriptOlaMundo.ino](https://github.com/brunomlima/Digispark/tree/main/DownloadScriptOlaMundo) - Este script efetua download e executa o script.
+ScriptOlaMundo.ps1 publicado no https://gist.githubusercontent.com isso irá apresentar na tela do powershell uma mensagem  "Hello, World!".
+- [DesabilitaWindowsDefender.ino](https://github.com/brunomlima/Digispark/tree/main/DesabilitaWindowsDefender) - Este script abre o powersheel como 
+administrador, desabilita o windows defender e o firewall.
 - [ReverseShell.ino](https://github.com/brunomlima/Digispark/tree/main/ReverseShell) - Este script efetua download e executa o script ReverseShell.ps1 publicado no https://gist.githubusercontent.com isso irá abrir o reverse shell na máquina da vítima.
 Obs.: Uma melhoria que pode ser implementada neste script seria utilizar o https://ngrok.com/ para acessar a máquina da vítima na internet e registrar na inicialização do windows o script ReverseShell.ps1.
 Atenção: Da máquina hacker para a máquina da vítima que estiverem na mesma rede (Exemplo: 192.168.1.104:4444) devemos utilizar os comandos abaixo
