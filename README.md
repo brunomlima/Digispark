@@ -71,12 +71,19 @@ Aqui abordaremos ataques em uma máquina com o Sistema Operacional Windows 10 Pr
 - [RemoveForkBombPersistent.ino](https://github.com/brunomlima/Digispark/tree/main/RemoveForkBombPersistent) - Remover da inicialização o arquivo .bat do fork bomb. Atenção :  Para que você consiga executar o script, primeiro desabilite o fork da inicialização do Windows, seguindo esse passo a passo - digite: ctrl + shift + esc, clique na aba inicializar, botão direito no fork e escolha a opção desabilitar, tudo pronto para executar o script.
 - [DesconfiguraMouse.ino](https://github.com/brunomlima/Digispark/tree/main/DesconfiguraMouse) - Abre as Propriedades do Mouse, alterna botões primários e secundários, altera a velocidade do clique duplo para lenta, exibe trilhas de ponteiro,a velocidade do ponteiro para a configuração mais baixa possível, aumenta o incremento de rolagem vertical para 100 linhas.
 - [PegadinhaIconeNaoFunciona.ino](https://github.com/brunomlima/Digispark/tree/main/PegadinhaIconeNaoFunciona) - Captura de tela da área de trabalho, define-a como papel de parede e oculta os ícones da área de trabalho.
-- [BackDoorBlanka.ino](https://github.com/brunomlima/Digispark/tree/main/BackDoorBlanka) - Cria uma conta com privilégios de administrador com o nome blanka e passwd Ping@123. Também oculta a tela de login e
+- [BackDoorBlanka.ino](https://github.com/brunomlima/Digispark/tree/main/BackDoorBlanka) - Cria uma conta com privilégios de administrador com o nome blanka e senha Ping@123. Também oculta a tela de login e
 ativa a área de trabalho remota para ser acessível a partir de um local remoto.
 - [DownloadScriptOlaMundo.ino](https://github.com/brunomlima/Digispark/tree/main/DownloadScriptOlaMundo) - Este script efetua download e executa o script.
 ScriptOlaMundo.ps1 publicado no https://gist.githubusercontent.com isso irá apresentar na tela do powershell uma mensagem  "Hello, World!".
 - [DesabilitaWindowsDefender.ino](https://github.com/brunomlima/Digispark/tree/main/DesabilitaWindowsDefender) - Este script abre o powersheel como 
 administrador, desabilita o windows defender e o firewall.
+- [BackDoorSSHWin10.ino](https://github.com/brunomlima/Digispark/tree/main/BackDoorSSHWin10) - Este script efetua download e executa o script Install-OpenSSH.ps1 publicado no https://gist.githubusercontent.com isso irá instalar e configurar o Server Open SSH na máquina da vítima e será possível acessar remotamente na mesma rede via programa putty e winscp para transferência de arquivos, utilizando o usuário blanka e senha Ping@123.
+Obs.: Uma melhoria que pode ser implementada nos script Install-OpenSSH.ps1 é a alteração da porta padrão 22 para ex: 2222 e configurar chave publica enviando essas informações por e-mail.
+
+    Não tem o PUTTY? Baixe aqui - [putty](https://www.putty.org/)
+
+    Não tem o WINSCP? Baixe aqui - [winscp](https://winscp.net/eng/download.php)
+
 - [ReverseShell.ino](https://github.com/brunomlima/Digispark/tree/main/ReverseShell) - Este script efetua download e executa o script ReverseShell.ps1 publicado no https://gist.githubusercontent.com isso irá abrir o reverse shell na máquina da vítima.
 Obs.: Uma melhoria que pode ser implementada neste script seria utilizar o https://ngrok.com/ para acessar a máquina da vítima na internet e registrar na inicialização do windows o script ReverseShell.ps1.
 Atenção: Da máquina hacker para a máquina da vítima que estiverem na mesma rede (Exemplo: 192.168.1.104:4444) devemos utilizar os comandos abaixo
@@ -85,12 +92,6 @@ Atenção: Da máquina hacker para a máquina da vítima que estiverem na mesma 
     nc.exe -lvnp 4444
     ```
     Não tem o NETCAT? Baixe aqui [eternallybored](https://eternallybored.org/misc/netcat/)
-
-- [BackDoorSSHWin10.ino](https://github.com/brunomlima/Digispark/tree/main/BackDoorSSHWin10) - Este script efetua download e executa o script Install-OpenSSH.ps1 publicado no https://gist.githubusercontent.com isso irá instalar e configurar o Server Open SSH na máquina da vítima e será possível acessar remotamente na mesma rede via programa putty e winscp para transferência de arquivos.
-Obs.: Uma melhoria que pode ser implementada nos script Install-OpenSSH.ps1 é a alteração da porta padrão 21 para ex: 2121 e configurar usuario e chave publica enviando essas informações por e-mail.
-
-    Não tem o PUTTY? Baixe aqui [putty](https://www.putty.org/)
-    Não tem o WINSCP? Baixe aqui [winscp](https://winscp.net/eng/download.php)
 
 - [InstallSKGBr.ino](https://github.com/brunomlima/Digispark/tree/main/InstallSKGBr) - Este script efetua o download e a instalação do software SKGBr, para saber mais acesse [SKGBr](https://github.com/brunomlima/SKGBr)
 
