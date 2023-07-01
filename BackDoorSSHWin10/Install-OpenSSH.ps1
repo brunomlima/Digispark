@@ -1,7 +1,7 @@
 #Configure Variables
 $InstallPath = "C:\Program Files\OpenSSH"
-$DisablePasswordAuthentication = $True
-$DisablePubkeyAuthentication = $True
+$DisablePasswordAuthentication = $false
+$DisablePubkeyAuthentication = $true
 $AutoStartSSHD = $true
 $AutoStartSSHAGENT = $false
 

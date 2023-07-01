@@ -86,10 +86,11 @@ Atenção: Da máquina hacker para a máquina da vítima que estiverem na mesma 
     ```
     Não tem o NETCAT? Baixe aqui [eternallybored](https://eternallybored.org/misc/netcat/)
 
-- [BackDoorSSHWin10.ino](https://github.com/brunomlima/Digispark/tree/main/BackDoorSSHWin10) - Este script efetua download e executa o script Install-OpenSSH.ps1 publicado no https://gist.githubusercontent.com isso irá instalar e configurar o Open SSH na máquina da vítima e será possível acessar remotamente na mesma rede via programa putty.
+- [BackDoorSSHWin10.ino](https://github.com/brunomlima/Digispark/tree/main/BackDoorSSHWin10) - Este script efetua download e executa o script Install-OpenSSH.ps1 publicado no https://gist.githubusercontent.com isso irá instalar e configurar o Server Open SSH na máquina da vítima e será possível acessar remotamente na mesma rede via programa putty e winscp para transferência de arquivos.
 Obs.: Uma melhoria que pode ser implementada nos script Install-OpenSSH.ps1 é a alteração da porta padrão 21 para ex: 2121 e configurar usuario e chave publica enviando essas informações por e-mail.
 
     Não tem o PUTTY? Baixe aqui [putty](https://www.putty.org/)
+    Não tem o WINSCP? Baixe aqui [winscp](https://winscp.net/eng/download.php)
 
 - [InstallSKGBr.ino](https://github.com/brunomlima/Digispark/tree/main/InstallSKGBr) - Este script efetua o download e a instalação do software SKGBr, para saber mais acesse [SKGBr](https://github.com/brunomlima/SKGBr)
 
