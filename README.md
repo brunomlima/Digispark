@@ -78,20 +78,10 @@ ScriptOlaMundo.ps1 publicado no https://gist.githubusercontent.com isso irá apr
 - [DesabilitaWindowsDefender.ino](https://github.com/brunomlima/Digispark/tree/main/DesabilitaWindowsDefender) - Este script abre o powersheel como 
 administrador, desabilita o windows defender e o firewall.
 - [BackDoorSSHWin10.ino](https://github.com/brunomlima/Digispark/tree/main/BackDoorSSHWin10) - Este script efetua download e executa o script Install-OpenSSH.ps1 publicado no https://gist.githubusercontent.com isso irá instalar e configurar o Server Open SSH na máquina da vítima e será possível acessar remotamente na mesma rede via programa putty e winscp para transferência de arquivos, utilizando o usuário blanka e senha Ping@123.
-Obs.: Uma melhoria que pode ser implementada nos script Install-OpenSSH.ps1 é a alteração da porta padrão 22 para ex: 2222 e configurar chave publica enviando essas informações por e-mail.
+Obs.: Uma melhoria que pode ser implementada no script Install-OpenSSH.ps1 é a alteração da porta padrão 22 para ex: 2222 e configurar chave publica e os arquivos serem enviandos por e-mail.
 
     Não tem o PUTTY? Baixe aqui - [putty](https://www.putty.org/)
-
     Não tem o WINSCP? Baixe aqui - [winscp](https://winscp.net/eng/download.php)
-
-- [ReverseShell.ino](https://github.com/brunomlima/Digispark/tree/main/ReverseShell) - Este script efetua download e executa o script ReverseShell.ps1 publicado no https://gist.githubusercontent.com isso irá abrir o reverse shell na máquina da vítima.
-Obs.: Uma melhoria que pode ser implementada neste script seria utilizar o https://ngrok.com/ para acessar a máquina da vítima na internet e registrar na inicialização do windows o script ReverseShell.ps1.
-Atenção: Da máquina hacker para a máquina da vítima que estiverem na mesma rede (Exemplo: 192.168.1.104:4444) devemos utilizar os comandos abaixo
-    ```
-    cd c:\Hacker\netcat-win32-1.12 
-    nc.exe -lvnp 4444
-    ```
-    Não tem o NETCAT? Baixe aqui [eternallybored](https://eternallybored.org/misc/netcat/)
 
 - [InstallSKGBr.ino](https://github.com/brunomlima/Digispark/tree/main/InstallSKGBr) - Este script efetua o download e a instalação do software SKGBr, para saber mais acesse [SKGBr](https://github.com/brunomlima/SKGBr)
 
